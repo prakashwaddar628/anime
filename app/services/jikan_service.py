@@ -6,6 +6,7 @@ from typing import Optional
 JIKAN_API_BASE_URL = "https://api.jikan.moe/v4"
 
 def get_character_image_url(character_name: str) -> Optional[str]:
+    print(character_name)
     """
     Fetches the primary image URL for a given character from the Jikan API.
 

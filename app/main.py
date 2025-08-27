@@ -5,6 +5,7 @@ from PIL import Image
 import torch
 import timm
 from torchvision import transforms
+from fastapi.middleware.cors import CORSMiddleware
 
 # Import all three of our services
 from .services import gemini_service, similarity_service, jikan_service
@@ -17,6 +18,19 @@ app = FastAPI(
     title="Anime Character Recognizer API",
     description="Full pipeline API to identify characters, get details, find similar ones, and provide image URLs.",
     version="1.0.0",
+)
+
+origins = [
+    "http://localhost:5173",
+    "http://localhost:3000", # Common for other React dev servers
+]
+
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=origins,
+    allow_credentials=True,
+    allow_methods=["*"], # Allows all methods (GET, POST, etc.)
+    allow_headers=["*"], # Allows all headers
 )
 
 # 2. Load Class Names

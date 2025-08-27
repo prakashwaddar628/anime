@@ -43,8 +43,18 @@ except FileNotFoundError:
 
 # 3. Load the Fine-Tuned Model
 model = timm.create_model('efficientnet_b0', pretrained=False, num_classes=NUM_CLASSES)
-print("--- SIMULATION MODE ---")
+
+# --- THIS IS THE KEY CHANGE ---
+# Load the weights you just trained
+try:
+    model.load_state_dict(torch.load('anime_character_model.pth', map_location=torch.device('cpu')))
+    print("--- Successfully loaded fine-tuned model weights! ---")
+except FileNotFoundError:
+    print("--- WARNING: anime_character_model.pth not found. Running in simulation mode. ---")
+# ----------------------------
+
 model.eval()
+
 
 # 4. Define Image Transformations
 model_config = model.default_cfg
@@ -86,8 +96,21 @@ async def recognize_character(file: UploadFile = File(...)):
         predicted_character_name = class_names.get(str(predicted_class_idx), "Unknown Character")
         confidence = probabilities[predicted_class_idx].item()
         
+        # --- NEW: CONFIDENCE THRESHOLD CHECK ---
+        CONFIDENCE_THRESHOLD = 0.20  # This is 60%
+
+        if confidence < CONFIDENCE_THRESHOLD:
+            # If the model's confidence is too low, stop everything and return an error.
+            # Our frontend will display this 'detail' message.
+            raise HTTPException(
+                status_code=404,
+                detail=f"Unidentified character. (Confidence: {confidence:.2%}) is below the {CONFIDENCE_THRESHOLD:.0%} threshold."
+            )
+        # ----------------------------------------
+
         if predicted_character_name == "Unknown Character":
-            raise HTTPException(status_code=404, detail="Character could not be identified.")
+            # This is a fallback for a different kind of error (e.g., bad class index)
+            raise HTTPException(status_code=500, detail="Character index out of bounds.")
 
         # --- 2. Get Details from Gemini ---
         character_details = gemini_service.get_character_details_from_gemini(predicted_character_name)
@@ -102,11 +125,9 @@ async def recognize_character(file: UploadFile = File(...)):
         )
         
         # --- 4. Enrich with Image URLs from Jikan ---
-        # Fetch image for the main predicted character
         main_char_name_for_search = character_details.get("name", predicted_character_name)
         character_details["image_url"] = jikan_service.get_character_image_url(main_char_name_for_search)
         
-        # Fetch images for each of the similar characters
         for char in similar_characters:
             char["image_url"] = jikan_service.get_character_image_url(char["name"])
 
@@ -121,4 +142,7 @@ async def recognize_character(file: UploadFile = File(...)):
         }
 
     except Exception as e:
+        # This will catch our HTTPException and any other errors
+        if isinstance(e, HTTPException):
+            raise e
         raise HTTPException(status_code=500, detail=f"An error occurred during the process: {str(e)}")

@@ -41,20 +41,28 @@ const ResultsDisplay = ({ result }) => {
             </div>
           </div>
 
+          {/* --- THIS IS THE UPDATED SECTION --- */}
           <div>
             <h4 className="font-semibold text-gray-200 mb-2">Where to Watch:</h4>
             <div className="flex flex-wrap gap-2">
               {character_details.streaming_platforms.length > 0 ? (
                 character_details.streaming_platforms.map((platform, index) => (
-                  <span key={index} className="bg-cyan-800 text-cyan-200 text-sm font-semibold px-3 py-1 rounded-md">
-                    {platform}
-                  </span>
+                  <a
+                    key={index}
+                    href={platform.url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="bg-cyan-800 text-cyan-200 text-sm font-semibold px-3 py-1 rounded-md hover:bg-cyan-700 transition-colors"
+                  >
+                    {platform.name}
+                  </a>
                 ))
               ) : (
                 <p className="text-gray-500">Not available on major platforms.</p>
               )}
             </div>
           </div>
+          {/* --- END OF UPDATED SECTION --- */}
 
         </div>
       </div>

@@ -13,7 +13,7 @@ const SimilarCharactersList = ({ characters }) => {
         {characters.map((char, index) => (
           <div key={index} className="bg-gray-700 rounded-lg overflow-hidden shadow-lg transition-transform transform hover:scale-105">
             {char.image_url ? (
-              <img src={char.image_url} alt={char.name} className="w-full h-48 object-cover" />
+              <img src={char.image_url} alt={char.name} className="w-full h-75 object-cover" />
             ) : (
               <div className="w-full h-48 bg-gray-600 flex items-center justify-center">
                 <p className="text-gray-400">No Image</p>

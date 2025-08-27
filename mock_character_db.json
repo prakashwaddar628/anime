@@ -1,8 +1,83 @@
 [
   {
+    "name": "Lelouch Lamperouge",
+    "anime": "Code Geass",
+    "tags": ["black hair", "violet eyes", "slender build", "intelligent", "student uniform"]
+  },
+  {
     "name": "Levi Ackerman",
     "anime": "Attack on Titan",
     "tags": ["short black hair", "gray eyes", "undercut hairstyle", "serious expression", "military uniform"]
+  },
+  {
+    "name": "Monkey D. Luffy",
+    "anime": "One Piece",
+    "tags": ["black hair", "straw hat", "scar under eye", "red vest", "pirate"]
+  },
+  {
+    "name": "L Lawliet",
+    "anime": "Death Note",
+    "tags": ["messy black hair", "dark circles", "slouched posture", "white shirt", "genius detective"]
+  },
+  {
+    "name": "Roronoa Zoro",
+    "anime": "One Piece",
+    "tags": ["green hair", "three swords", "muscular build", "scar on eye", "pirate swordsman"]
+  },
+  {
+    "name": "Light Yagami",
+    "anime": "Death Note",
+    "tags": ["brown hair", "brown eyes", "school uniform", "intelligent", "notebook"]
+  },
+  {
+    "name": "Guts",
+    "anime": "Berserk",
+    "tags": ["black spiky hair", "scarred face", "muscular build", "large sword", "armor"]
+  },
+  {
+    "name": "Edward Elric",
+    "anime": "Fullmetal Alchemist",
+    "tags": ["blond hair", "braid", "red coat", "automail arm", "alchemy"]
+  },
+  {
+    "name": "Itachi Uchiha",
+    "anime": "Naruto",
+    "tags": ["long black hair", "red eyes", "headband with slash", "cloak with red clouds", "calm expression"]
+  },
+  {
+    "name": "Ken Kaneki",
+    "anime": "Tokyo Ghoul",
+    "tags": ["white hair", "eye patch", "ghoul mask", "black outfit", "red eye"]
+  },
+  {
+    "name": "Spike Spiegel",
+    "anime": "Cowboy Bebop",
+    "tags": ["messy green hair", "slim build", "blue suit", "laid-back expression", "cigarette"]
+  },
+  {
+    "name": "Gojo Satoru",
+    "anime": "Jujutsu Kaisen",
+    "tags": ["white hair", "blue eyes", "blindfold", "tall build", "teacher"]
+  },
+  {
+    "name": "Naruto Uzumaki",
+    "anime": "Naruto",
+    "tags": ["blond spiky hair", "blue eyes", "whisker marks", "orange jumpsuit", "headband"]
+  },
+  {
+    "name": "Kakashi Hatake",
+    "anime": "Naruto",
+    "tags": ["silver hair", "masked face", "forehead protector over eye", "copy ninja", "vest"]
+  },
+  {
+    "name": "Saitama",
+    "anime": "One Punch Man",
+    "tags": ["bald head", "yellow jumpsuit", "red gloves", "cape", "serious expression"]
+  },
+  {
+    "name": "Eren Yeager",
+    "anime": "Attack on Titan",
+    "tags": ["brown hair", "green eyes", "determined look", "scout uniform", "young soldier"]
   },
   {
     "name": "Mikasa Ackerman",
@@ -10,23 +85,168 @@
     "tags": ["short black hair", "dark eyes", "red scarf", "serious expression", "military uniform"]
   },
   {
-    "name": "Asuna Yuuki",
-    "anime": "Sword Art Online",
-    "tags": ["long orange hair", "hazel eyes", "braided hair", "white and red outfit", "swordswoman"]
+    "name": "Okabe Rintarou",
+    "anime": "Steins;Gate",
+    "tags": ["messy black hair", "lab coat", "eccentric expression", "slim build", "mad scientist"]
   },
   {
-    "name": "Saber (Artoria Pendragon)",
+    "name": "Killua Zoldyck",
+    "anime": "Hunter x Hunter",
+    "tags": ["white hair", "blue eyes", "youthful", "skater outfit", "assassin"]
+  },
+  {
+    "name": "Gintoki Sakata",
+    "anime": "Gintama",
+    "tags": ["silver hair", "lazy look", "samurai sword", "kimono", "carefree attitude"]
+  },
+  {
+    "name": "Ichigo Kurosaki",
+    "anime": "Bleach",
+    "tags": ["orange hair", "brown eyes", "black shihakusho", "sword wielder", "serious look"]
+  },
+  {
+    "name": "Roy Mustang",
+    "anime": "Fullmetal Alchemist",
+    "tags": ["black hair", "blue eyes", "military uniform", "gloves with transmutation circle", "flame alchemist"]
+  },
+  {
+    "name": "Hisoka Morow",
+    "anime": "Hunter x Hunter",
+    "tags": ["red hair", "star and teardrop face paint", "flamboyant clothes", "magician vibe", "creepy smile"]
+  },
+  {
+    "name": "Gon Freecss",
+    "anime": "Hunter x Hunter",
+    "tags": ["spiky black hair", "green outfit", "childlike", "adventurous", "fishing rod"]
+  },
+  {
+    "name": "Alucard",
+    "anime": "Hellsing",
+    "tags": ["long black hair", "red coat", "wide-brim hat", "red glasses", "vampire"]
+  },
+  {
+    "name": "Vegeta",
+    "anime": "Dragon Ball Z",
+    "tags": ["black spiky hair", "widow's peak", "muscular build", "blue armor", "prideful expression"]
+  },
+  {
+    "name": "Sanji",
+    "anime": "One Piece",
+    "tags": ["blond hair covering eye", "suit", "cigarette", "chef", "tall build"]
+  },
+  {
+    "name": "Jotaro Kujo",
+    "anime": "JoJo's Bizarre Adventure",
+    "tags": ["black coat", "hat blending with hair", "tall build", "stern look", "stand user"]
+  },
+  {
+    "name": "Kurisu Makise",
+    "anime": "Steins;Gate",
+    "tags": ["long reddish-brown hair", "white shirt", "red tie", "lab coat", "serious expression"]
+  },
+  {
+    "name": "Eikichi Onizuka",
+    "anime": "Great Teacher Onizuka",
+    "tags": ["blond hair", "muscular build", "casual clothes", "funny expression", "teacher"]
+  },
+  {
+    "name": "Izaya Orihara",
+    "anime": "Durarara!!",
+    "tags": ["short black hair", "fur-trimmed jacket", "slim build", "cunning smile", "informant"]
+  },
+  {
+    "name": "Shikamaru Nara",
+    "anime": "Naruto",
+    "tags": ["brown hair tied in ponytail", "lazy look", "green vest", "strategist", "hands in pockets"]
+  },
+  {
+    "name": "Gaara",
+    "anime": "Naruto",
+    "tags": ["red hair", "dark eye rings", "gourd on back", "sand powers", "serious look"]
+  },
+  {
+    "name": "Yato",
+    "anime": "Noragami",
+    "tags": ["dark purple hair", "blue eyes", "track suit", "scarf", "playful expression"]
+  },
+  {
+    "name": "Erwin Smith",
+    "anime": "Attack on Titan",
+    "tags": ["blond hair", "blue eyes", "military uniform", "commander", "serious look"]
+  },
+  {
+    "name": "Trafalgar D. Water Law",
+    "anime": "One Piece",
+    "tags": ["black hair", "fuzzy hat", "tattoos", "long coat", "pirate doctor"]
+  },
+  {
+    "name": "Alphonse Elric",
+    "anime": "Fullmetal Alchemist",
+    "tags": ["armor body", "gentle demeanor", "tall build", "red cloth", "younger brother"]
+  },
+  {
+    "name": "Saber",
     "anime": "Fate/stay night",
-    "tags": ["short blond hair", "green eyes", "braided hair", "armor", "swordswoman"]
+    "tags": ["blond hair", "green eyes", "braid", "armor", "swordswoman"]
   },
   {
-    "name": "Gojo Satoru",
-    "anime": "Jujutsu Kaisen",
-    "tags": ["short white hair", "blue eyes", "blindfold", "tall", "teacher"]
+    "name": "Rock Lee",
+    "anime": "Naruto",
+    "tags": ["bowl haircut", "thick eyebrows", "green jumpsuit", "headband", "energetic"]
   },
   {
-      "name": "Killua Zoldyck",
-      "anime": "Hunter x Hunter",
-      "tags": ["short white hair", "blue eyes", "child", "skater outfit", "assassin"]
+    "name": "Toshiro Hitsugaya",
+    "anime": "Bleach",
+    "tags": ["white hair", "turquoise eyes", "short height", "captain's robe", "serious expression"]
+  },
+  {
+    "name": "Shinji Ikari",
+    "anime": "Neon Genesis Evangelion",
+    "tags": ["brown hair", "blue eyes", "school uniform", "nervous expression", "eva pilot"]
+  },
+  {
+    "name": "Reigen Arataka",
+    "anime": "Mob Psycho 100",
+    "tags": ["blond hair", "suit and tie", "con man vibe", "charismatic", "mentor"]
+  },
+  {
+    "name": "Joseph Joestar",
+    "anime": "JoJo's Bizarre Adventure",
+    "tags": ["brown hair", "muscular build", "purple scarf", "energetic expression", "stand user"]
+  },
+  {
+    "name": "Hinata Hyuga",
+    "anime": "Naruto",
+    "tags": ["dark blue hair", "white eyes", "shy look", "jacket", "gentle"]
+  },
+  {
+    "name": "Portgas D. Ace",
+    "anime": "One Piece",
+    "tags": ["black hair", "freckles", "orange hat", "tattoos", "fire powers"]
+  },
+  {
+    "name": "C.C.",
+    "anime": "Code Geass",
+    "tags": ["long green hair", "gold eyes", "slim build", "mysterious", "immortal"]
+  },
+  {
+    "name": "Yagami Taichi",
+    "anime": "Digimon Adventure",
+    "tags": ["spiky brown hair", "goggles", "blue shirt", "brave", "child protagonist"]
+  },
+  {
+    "name": "Hol Horse",
+    "anime": "JoJo's Bizarre Adventure",
+    "tags": ["blond hair", "cowboy hat", "revolver", "goatee", "gunslinger"]
+  },
+  {
+    "name": "Kenshin Himura",
+    "anime": "Rurouni Kenshin",
+    "tags": ["red hair", "cross-shaped scar", "samurai sword", "kimono", "calm look"]
+  },
+  {
+    "name": "Askeladd",
+    "anime": "Vinland Saga",
+    "tags": ["blond hair", "beard", "armor", "cunning eyes", "leader"]
   }
 ]

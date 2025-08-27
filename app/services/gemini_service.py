@@ -26,7 +26,7 @@ def get_character_details_from_gemini(character_name: str) -> dict:
     - "anime_name": The full name of the primary anime the character is in.
     - "streaming_platforms": A JSON array of objects. Each object must have "name" and "url" keys.
       IMPORTANT: The "url" should be the simplest, cleanest version possible.
-      For example, prefer 'https://www.crunchyroll.com/naruto' over 'https://www.crunchyroll.com/series/GY9PJ5KWR/naruto'.
+      For example, prefer 'https://www.crunchyroll.com/naruto' over 'https://www.crunchyroll.com/series/GY9PJ5KWR/naruto' and 'https://www.hulu.com/naruto over 'www.hulu.com/series/naruto'.
       Avoid long, random-looking series IDs in the URL if a cleaner one exists.
 
     Here is an example for "Anya Forger" with the desired URL format:

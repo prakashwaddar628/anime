@@ -2,5 +2,10 @@ fastapi
 uvicorn[standard]
 python-multipart
 torch
+torchvision
 timm
 requests
+Pillow
+pydantic-settings
+python-dotenv
+google-generativeai

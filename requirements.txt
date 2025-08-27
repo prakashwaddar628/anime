@@ -9,3 +9,4 @@ Pillow
 pydantic-settings
 python-dotenv
 google-generativeai
+scipy

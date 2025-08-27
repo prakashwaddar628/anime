@@ -1,0 +1,32 @@
+[
+  {
+    "name": "Levi Ackerman",
+    "anime": "Attack on Titan",
+    "tags": ["short black hair", "gray eyes", "undercut hairstyle", "serious expression", "military uniform"]
+  },
+  {
+    "name": "Mikasa Ackerman",
+    "anime": "Attack on Titan",
+    "tags": ["short black hair", "dark eyes", "red scarf", "serious expression", "military uniform"]
+  },
+  {
+    "name": "Asuna Yuuki",
+    "anime": "Sword Art Online",
+    "tags": ["long orange hair", "hazel eyes", "braided hair", "white and red outfit", "swordswoman"]
+  },
+  {
+    "name": "Saber (Artoria Pendragon)",
+    "anime": "Fate/stay night",
+    "tags": ["short blond hair", "green eyes", "braided hair", "armor", "swordswoman"]
+  },
+  {
+    "name": "Gojo Satoru",
+    "anime": "Jujutsu Kaisen",
+    "tags": ["short white hair", "blue eyes", "blindfold", "tall", "teacher"]
+  },
+  {
+      "name": "Killua Zoldyck",
+      "anime": "Hunter x Hunter",
+      "tags": ["short white hair", "blue eyes", "child", "skater outfit", "assassin"]
+  }
+]
